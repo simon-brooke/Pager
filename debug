@@ -1,0 +1,644 @@
+2024-04-22T11:34:01.490+0100 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: /home/simon/.gradle/native
+2024-04-22T11:34:01.528+0100 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized jansi services in: /home/simon/.gradle/native
+2024-04-22T11:34:01.538+0100 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   For more details, please refer to https://docs.gradle.org/8.7/userguide/logging.html#sec:debug_security in the Gradle documentation.
+#############################################################################
+
+2024-04-22T11:34:01.575+0100 [INFO] [org.gradle.internal.jvm.inspection.DefaultJvmMetadataDetector] Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.10, JAVA_VENDOR=Debian, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.10+7-Debian-1deb12u1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.10+7-Debian-1deb12u1, VM_VENDOR=Debian, OS_ARCH=amd64}
+2024-04-22T11:34:01.635+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Executing build 90af2d3c-c4f1-4f99-8c25-a7d9bab982aa in daemon client {pid=7708}
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface wlx488f4cf2fe6e
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b086:eb6b:1f2f:d1df%wlx488f4cf2fe6e
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.43.129
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2024-04-22T11:34:01.637+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2024-04-22T11:34:01.638+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2024-04-22T11:34:01.643+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-22T11:34:01.646+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-22T11:34:01.648+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-22T11:34:01.649+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Attempting to connect to [4e2e6f1f-fa38-4ebc-9e69-b93b7ca5cc76 port:42833, addresses:[/127.0.0.1]].
+2024-04-22T11:34:01.649+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Trying to connect to address /127.0.0.1.
+2024-04-22T11:34:01.650+0100 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Connected to address /127.0.0.1:42833.
+2024-04-22T11:34:01.656+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Connected to daemon DaemonInfo{pid=4773, address=[4e2e6f1f-fa38-4ebc-9e69-b93b7ca5cc76 port:42833, addresses:[/127.0.0.1]], state=Idle, lastBusy=1713782014822, context=DefaultDaemonContext[uid=6da4ddcb-59ac-4384-a982-5b7f044b7036,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,daemonRegistryDir=/home/simon/.gradle/daemon,pid=4773,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=90af2d3c-c4f1-4f99-8c25-a7d9bab982aa, currentDir=/home/simon/workspace/Pager}.
+2024-04-22T11:34:01.656+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Build
+2024-04-22T11:34:01.662+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result org.gradle.launcher.daemon.protocol.BuildStarted@32a68f4f from daemon DaemonInfo{pid=4773, address=[4e2e6f1f-fa38-4ebc-9e69-b93b7ca5cc76 port:42833, addresses:[/127.0.0.1]], state=Idle, lastBusy=1713782014822, context=DefaultDaemonContext[uid=6da4ddcb-59ac-4384-a982-5b7f044b7036,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,daemonRegistryDir=/home/simon/.gradle/daemon,pid=4773,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} (build should be starting).
+2024-04-22T11:34:01.663+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 4773). The daemon log file: /home/simon/.gradle/daemon/8.7/daemon-4773.out.log
+2024-04-22T11:34:01.663+0100 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 18th build in daemon [uptime: 27 mins 43.224 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 23% of 384 MiB]
+2024-04-22T11:34:01.663+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2024-04-22T11:34:01.663+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=6da4ddcb-59ac-4384-a982-5b7f044b7036,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,daemonRegistryDir=/home/simon/.gradle/daemon,pid=4773,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+2024-04-22T11:34:01.663+0100 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 12 worker leases.
+2024-04-22T11:34:01.664+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: acquired lock on worker lease
+2024-04-22T11:34:01.664+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' started
+2024-04-22T11:34:01.665+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for fileHashes, path /home/simon/workspace/Pager/.gradle/8.7/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@1b158df8
+2024-04-22T11:34:01.665+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/home/simon/workspace/Pager/.gradle/8.7/fileHashes)
+2024-04-22T11:34:01.665+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/home/simon/workspace/Pager/.gradle/8.7/fileHashes).
+2024-04-22T11:34:01.665+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/home/simon/workspace/Pager/.gradle/8.7/fileHashes).
+2024-04-22T11:34:01.665+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for resourceHashesCache, path /home/simon/workspace/Pager/.gradle/8.7/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@1b158df8
+2024-04-22T11:34:01.665+0100 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Now considering [/home/simon/workspace/Pager, /home/simon/workspace/SimFX/buildSrc, /home/simon/workspace/SimFX] as hierarchies to watch
+2024-04-22T11:34:01.666+0100 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system is configured to be enabled if available
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system computed to be enabled if available
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' started
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected sysfs: /sys from sysfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected proc: /proc from proc (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devtmpfs: /dev from udev (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devpts: /dev/pts from devpts (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run from tmpfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ext4: / from /dev/sdc2 (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected securityfs: /sys/kernel/security from securityfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /dev/shm from tmpfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run/lock from tmpfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected cgroup2: /sys/fs/cgroup from cgroup2 (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected pstore: /sys/fs/pstore from pstore (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected efivarfs: /sys/firmware/efi/efivars from efivarfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected bpf: /sys/fs/bpf from bpf (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /proc/sys/fs/binfmt_misc from systemd-1 (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected mqueue: /dev/mqueue from mqueue (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected hugetlbfs: /dev/hugepages from hugetlbfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tracefs: /sys/kernel/tracing from tracefs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected debugfs: /sys/kernel/debug from debugfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ramfs: /run/credentials/systemd-sysusers.service from ramfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected configfs: /sys/kernel/config from configfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fusectl: /sys/fs/fuse/connections from fusectl (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ramfs: /run/credentials/systemd-tmpfiles-setup-dev.service from ramfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ramfs: /run/credentials/systemd-sysctl.service from ramfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected vfat: /boot/efi from /dev/sdc1 (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected binfmt_misc: /proc/sys/fs/binfmt_misc from binfmt_misc (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ramfs: /run/credentials/systemd-tmpfiles-setup.service from ramfs (remote: false)
+2024-04-22T11:34:01.666+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run/user/1000 from tmpfs (remote: false)
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fuse.gvfsd-fuse: /run/user/1000/gvfs from gvfsd-fuse (remote: false)
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fuseblk: /media/simon/Seagate Portable Drive from /dev/sdd1 (remote: false)
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fuse.portal: /run/user/1000/doc from portal (remote: false)
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build started for file system watching'
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' completed
+2024-04-22T11:34:01.667+0100 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] File system watching is active
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' started
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.initialization.properties.DefaultProjectPropertiesLoader] Found env project properties: []
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.initialization.properties.DefaultProjectPropertiesLoader] Found system project properties: []
+2024-04-22T11:34:01.667+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Evaluate settings' started
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for workingDirs, path /home/simon/workspace/Pager/.gradle/8.7/vcsMetadata/workingDirs.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@754a4065
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md5-checksums, path /home/simon/workspace/Pager/.gradle/8.7/checksums/md5-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@4b60b5fd
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for checksums cache (/home/simon/workspace/Pager/.gradle/8.7/checksums)
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on checksums cache (/home/simon/workspace/Pager/.gradle/8.7/checksums).
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on checksums cache (/home/simon/workspace/Pager/.gradle/8.7/checksums).
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha1-checksums, path /home/simon/workspace/Pager/.gradle/8.7/checksums/sha1-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@4b60b5fd
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha256-checksums, path /home/simon/workspace/Pager/.gradle/8.7/checksums/sha256-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@4b60b5fd
+2024-04-22T11:34:01.668+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha512-checksums, path /home/simon/workspace/Pager/.gradle/8.7/checksums/sha512-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@4b60b5fd
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md-supplier, path /home/simon/.gradle/caches/8.7/md-supplier/md-supplier.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@78389ac3
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-supplier (/home/simon/.gradle/caches/8.7/md-supplier)
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-supplier (/home/simon/.gradle/caches/8.7/md-supplier).
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-supplier (/home/simon/.gradle/caches/8.7/md-supplier).
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md-rule, path /home/simon/.gradle/caches/8.7/md-rule/md-rule.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@6cdad6d3
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-rule (/home/simon/.gradle/caches/8.7/md-rule)
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-rule (/home/simon/.gradle/caches/8.7/md-rule).
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-rule (/home/simon/.gradle/caches/8.7/md-rule).
+2024-04-22T11:34:01.669+0100 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/simon/.m2/repository
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /home/simon/workspace/Pager/gradle/dependency-locks
+2024-04-22T11:34:01.670+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Starting Build
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Gradle user home: /home/simon/.gradle
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Current dir: /home/simon/workspace/Pager
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Settings file: null
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Build file: null
+2024-04-22T11:34:01.670+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply settings file 'settings.gradle' to settings 'Pager'' started
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply settings file 'settings.gradle' to settings 'Pager''
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply settings file 'settings.gradle' to settings 'Pager'' completed
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.003 secs
+2024-04-22T11:34:01.671+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Settings evaluated using settings file '/home/simon/workspace/Pager/settings.gradle'.
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.caching.configuration.internal.DefaultBuildCacheConfiguration] Found class org.gradle.caching.local.internal.DirectoryBuildCacheServiceFactory registered for class org.gradle.caching.local.DirectoryBuildCache
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finalize build cache configuration' started
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Finalize build cache configuration'
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finalize build cache configuration' completed
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Evaluate settings'
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Evaluate settings' completed
+2024-04-22T11:34:01.671+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load build'
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' completed
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure build' started
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load projects' started
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /home/simon/workspace/Pager/gradle.properties
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load projects'
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load projects' completed
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsLoaded listeners' started
+2024-04-22T11:34:01.672+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Projects loaded. Root project using build file '/home/simon/workspace/Pager/build.gradle'.
+2024-04-22T11:34:01.672+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Included projects: [root project 'pager']
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify projectsLoaded listeners'
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsLoaded listeners' completed
+2024-04-22T11:34:01.672+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure project :' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify beforeEvaluate listeners of :' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify beforeEvaluate listeners of :'
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.help-tasks to root project 'pager'' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :help' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :help'
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :projects' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :projects'
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :tasks' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :tasks'
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :properties' started
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :properties'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencyInsight' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependencyInsight'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencies' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependencies'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildEnvironment' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :buildEnvironment'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :components' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :components'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :model' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :model'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependentComponents' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependentComponents'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :outgoingVariants' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :outgoingVariants'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :resolvableConfigurations' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :resolvableConfigurations'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.help-tasks to root project 'pager''
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javaToolchains' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :javaToolchains'
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :prepareKotlinBuildScriptModel' started
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :prepareKotlinBuildScriptModel'
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.build-init to root project 'pager'' started
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :init' started
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :init'
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.build-init to root project 'pager''
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.wrapper to root project 'pager'' started
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :wrapper' started
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :wrapper'
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.wrapper to root project 'pager''
+2024-04-22T11:34:01.676+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply build file 'build.gradle' to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.java-library to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JavaPlugin to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JavaBasePlugin to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.BasePlugin to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.language.base.plugins.LifecycleBasePlugin to root project 'pager'' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :clean' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :clean'
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :assemble' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :assemble'
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :check' started
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :check'
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :build' started
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :build'
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.language.base.plugins.LifecycleBasePlugin to root project 'pager''
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.BasePlugin to root project 'pager''
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JvmEcosystemPlugin to root project 'pager'' started
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.JvmEcosystemPlugin to root project 'pager''
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.ReportingBasePlugin to root project 'pager'' started
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.ReportingBasePlugin to root project 'pager''
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JvmToolchainsPlugin to root project 'pager'' started
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.JvmToolchainsPlugin to root project 'pager''
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildNeeded' started
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :buildNeeded'
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildDependents' started
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :buildDependents'
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.JavaBasePlugin to root project 'pager''
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.jvm-test-suite to root project 'pager'' started
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.testing.base.plugins.TestSuiteBasePlugin to root project 'pager'' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.testing.base.plugins.TestSuiteBasePlugin to root project 'pager''
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.jvm-test-suite to root project 'pager''
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :processResources' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :processResources'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :compileJava' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :compileJava'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :classes' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :classes'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :jar' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :jar'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javadoc' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :javadoc'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :processTestResources' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :processTestResources'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :compileTestJava' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :compileTestJava'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :testClasses' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :testClasses'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :test' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :test'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.plugins.JavaPlugin to root project 'pager''
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.java-library to root project 'pager''
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.maven-publish to root project 'pager'' started
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.publish.plugins.PublishingPlugin to root project 'pager'' started
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :publish' started
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :publish'
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.api.publish.plugins.PublishingPlugin to root project 'pager''
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :publishToMavenLocal' started
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :publishToMavenLocal'
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.maven-publish to root project 'pager''
+2024-04-22T11:34:01.688+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :sourcesJar' started
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Realize task :sourcesJar'
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :javadoc' started
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Realize task :javadoc'
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :javadocJar' started
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Realize task :javadocJar'
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply build file 'build.gradle' to root project 'pager''
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify afterEvaluate listeners of :' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute Project.afterEvaluate listener' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute Project.afterEvaluate listener'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify afterEvaluate listeners of :'
+2024-04-22T11:34:01.673+0100 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] 
+2024-04-22T11:34:01.673+0100 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] > Configure project :
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: acquired lock on state of build :
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify beforeEvaluate listeners of :' completed
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' from state Registered to Created
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Discovered.
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Created.
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :help' completed
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :projects' completed
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :tasks' completed
+2024-04-22T11:34:01.673+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :properties' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencyInsight' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencies' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildEnvironment' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :components' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :model' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependentComponents' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :outgoingVariants' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :resolvableConfigurations' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.help-tasks to root project 'pager'' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javaToolchains' completed
+2024-04-22T11:34:01.674+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :prepareKotlinBuildScriptModel' completed
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :init' completed
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.build-init to root project 'pager'' completed
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :wrapper' completed
+2024-04-22T11:34:01.675+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.wrapper to root project 'pager'' completed
+2024-04-22T11:34:01.675+0100 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'pager' using build file '/home/simon/workspace/Pager/build.gradle'.
+2024-04-22T11:34:01.676+0100 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /home/simon/workspace/Pager/gradle/dependency-locks
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :clean' completed
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :assemble' completed
+2024-04-22T11:34:01.677+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :check' completed
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :build' completed
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.language.base.plugins.LifecycleBasePlugin to root project 'pager'' completed
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for outputFiles, path /home/simon/workspace/Pager/.gradle/buildOutputCleanup/outputFiles.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@5fbec77e
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for Build Output Cleanup Cache (/home/simon/workspace/Pager/.gradle/buildOutputCleanup)
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on Build Output Cleanup Cache (/home/simon/workspace/Pager/.gradle/buildOutputCleanup).
+2024-04-22T11:34:01.678+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on Build Output Cleanup Cache (/home/simon/workspace/Pager/.gradle/buildOutputCleanup).
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /home/simon/workspace/Pager/gradle/dependency-locks
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.679+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.BasePlugin to root project 'pager'' completed
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JvmEcosystemPlugin to root project 'pager'' completed
+2024-04-22T11:34:01.680+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.ReportingBasePlugin to root project 'pager'' completed
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JvmToolchainsPlugin to root project 'pager'' completed
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildNeeded' completed
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildDependents' completed
+2024-04-22T11:34:01.681+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JavaBasePlugin to root project 'pager'' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.testing.base.plugins.TestSuiteBasePlugin to root project 'pager'' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.jvm-test-suite to root project 'pager'' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.682+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :processResources' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :compileJava' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :classes' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :jar' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.683+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javadoc' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.684+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :processTestResources' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :compileTestJava' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :testClasses' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :test' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.685+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.plugins.JavaPlugin to root project 'pager'' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.686+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.java-library to root project 'pager'' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :publish' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.api.publish.plugins.PublishingPlugin to root project 'pager'' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :publishToMavenLocal' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.maven-publish to root project 'pager'' completed
+2024-04-22T11:34:01.687+0100 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/simon/.m2/repository
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :sourcesJar' completed
+2024-04-22T11:34:01.689+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :javadoc' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :javadocJar' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply build file 'build.gradle' to root project 'pager'' completed
+2024-04-22T11:34:01.690+0100 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 0.015 secs
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute Project.afterEvaluate listener' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify afterEvaluate listeners of :' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: released lock on state of build :
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Configure project :'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure project :' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsEvaluated listeners' started
+2024-04-22T11:34:01.691+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] All projects evaluated.
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify projectsEvaluated listeners'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsEvaluated listeners' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Configure build'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure build' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Calculate build tree task graph' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Calculate task graph' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: acquired lock on All projects of :
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :publishToMavenLocal' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Realize task :publishToMavenLocal'
+2024-04-22T11:34:01.691+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :publishToMavenLocal' completed
+2024-04-22T11:34:01.691+0100 [INFO] [org.gradle.execution.DefaultTaskSelector] Task name matched 'publishToMavenLocal'
+2024-04-22T11:34:01.691+0100 [INFO] [org.gradle.execution.TaskNameResolvingBuildTaskScheduler] Selected primary task 'publishToMavenLocal' from project :
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: released lock on All projects of :
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Calculate task graph'
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Calculate task graph' completed
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: acquired lock on All projects of :
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify task graph whenReady listeners' started
+2024-04-22T11:34:01.692+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Tasks to be executed: [task ':publishToMavenLocal']
+2024-04-22T11:34:01.692+0100 [INFO] [org.gradle.internal.buildevents.BuildLogger] Tasks that were excluded: []
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify task graph whenReady listeners'
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify task graph whenReady listeners' completed
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: released lock on All projects of :
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :clean' started
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' started
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Execute container callback action'
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Execute container callback action' completed
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Realize task :clean'
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Realize task :clean' completed
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Calculate build tree task graph'
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Calculate build tree task graph' completed
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run main tasks' started
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: released lock on worker lease
+2024-04-22T11:34:01.692+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] included builds: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run tasks' started
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.execution.plan.DefaultPlanExecutor] Using 12 parallel executor threads
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on state of build :
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on task execution for build :
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [INFO] [org.gradle.execution.plan.DefaultPlanExecutor] Resolve mutations for :publishToMavenLocal (Thread[Execution worker,5,main]) started.
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve mutations for task :publishToMavenLocal' started
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Resolve mutations for task :publishToMavenLocal'
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve mutations for task :publishToMavenLocal' completed
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: acquired lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: released lock on worker lease
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.execution.plan.DefaultFinalizedExecutionPlan] Node Resolve mutations for :publishToMavenLocal completed, executed: true
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.execution.plan.DefaultFinalizedExecutionPlan] Node Resolve mutations for :publishToMavenLocal finished executing
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on state of build :
+2024-04-22T11:34:01.693+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on task execution for build :
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on state of build :
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on task execution for build :
+2024-04-22T11:34:01.694+0100 [INFO] [org.gradle.execution.plan.DefaultPlanExecutor] :publishToMavenLocal (Thread[Execution worker,5,main]) started.
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] included builds: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for executionHistory, path /home/simon/workspace/Pager/.gradle/8.7/executionHistory/executionHistory.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@c124a6e
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for execution history cache (/home/simon/workspace/Pager/.gradle/8.7/executionHistory)
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on execution history cache (/home/simon/workspace/Pager/.gradle/8.7/executionHistory).
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on execution history cache (/home/simon/workspace/Pager/.gradle/8.7/executionHistory).
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: released lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: acquired lock on worker lease
+2024-04-22T11:34:01.694+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Task :publishToMavenLocal' started
+2024-04-22T11:34:01.695+0100 [LIFECYCLE] [class org.gradle.internal.buildevents.TaskExecutionLogger] 
+2024-04-22T11:34:01.695+0100 [LIFECYCLE] [class org.gradle.internal.buildevents.TaskExecutionLogger] > Task :publishToMavenLocal UP-TO-DATE
+2024-04-22T11:34:01.695+0100 [INFO] [org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter] Skipping task ':publishToMavenLocal' as it has no actions.
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Task :publishToMavenLocal'
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Task :publishToMavenLocal' completed
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.execution.plan.DefaultFinalizedExecutionPlan] Node :publishToMavenLocal completed, executed: true
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.execution.plan.DefaultFinalizedExecutionPlan] Node :publishToMavenLocal finished executing
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on state of build :
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on task execution for build :
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] included builds: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run tasks'
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run tasks' completed
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] included builds: released lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: acquired lock on worker lease
+2024-04-22T11:34:01.695+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 10: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run main tasks'
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run main tasks' completed
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 11: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 4: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 6: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 5: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 7: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 9: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 8: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 2: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: acquired lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Execution worker Thread 3: released lock on worker lease
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finish root build tree' started
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Finish root build tree'
+2024-04-22T11:34:01.696+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finish root build tree' completed
+2024-04-22T11:34:01.697+0100 [WARN] [org.gradle.internal.featurelifecycle.LoggingDeprecatedFeatureHandler] 
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.7/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2024-04-22T11:34:01.697+0100 [LIFECYCLE] [org.gradle.internal.buildevents.BuildResultLogger] 
+2024-04-22T11:34:01.697+0100 [LIFECYCLE] [org.gradle.internal.buildevents.BuildResultLogger] BUILD SUCCESSFUL in 411ms
+2024-04-22T11:34:01.697+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' started
+2024-04-22T11:34:01.697+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build finished for file system watching'
+2024-04-22T11:34:01.697+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' completed
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-supplier (/home/simon/.gradle/caches/8.7/md-supplier)
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-supplier (/home/simon/.gradle/caches/8.7/md-supplier).
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/home/simon/workspace/Pager/.gradle/8.7/executionHistory)
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/home/simon/workspace/Pager/.gradle/8.7/executionHistory).
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Build Output Cleanup Cache (/home/simon/workspace/Pager/.gradle/buildOutputCleanup)
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Build Output Cleanup Cache (/home/simon/workspace/Pager/.gradle/buildOutputCleanup).
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-rule (/home/simon/.gradle/caches/8.7/md-rule)
+2024-04-22T11:34:01.698+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-rule (/home/simon/.gradle/caches/8.7/md-rule).
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 0 resolution results binary files in 0.0 secs
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run build'
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' completed
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 10: released lock on worker lease
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/home/simon/workspace/Pager/.gradle/8.7/fileHashes)
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/home/simon/workspace/Pager/.gradle/8.7/fileHashes).
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] VCS Checkout Cache (/home/simon/workspace/Pager/.gradle/vcs-1) has last been fully cleaned up 0 hours ago
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache VCS Checkout Cache (/home/simon/workspace/Pager/.gradle/vcs-1) was closed 0 times.
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache VCS metadata (/home/simon/workspace/Pager/.gradle/8.7/vcsMetadata) was closed 0 times.
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for checksums cache (/home/simon/workspace/Pager/.gradle/8.7/checksums)
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on checksums cache (/home/simon/workspace/Pager/.gradle/8.7/checksums).
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Compressed Files Expansion Cache (/home/simon/workspace/Pager/.gradle/8.7/expanded) was closed 0 times.
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] dependencies-accessors (/home/simon/workspace/Pager/.gradle/8.7/dependencies-accessors) has last been fully cleaned up 0 hours ago
+2024-04-22T11:34:01.699+0100 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache dependencies-accessors (/home/simon/workspace/Pager/.gradle/8.7/dependencies-accessors) was closed 0 times.
+2024-04-22T11:34:01.703+0100 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2024-04-22T11:34:01.707+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientInputForwarder] Dispatching close input message: org.gradle.launcher.daemon.protocol.CloseInput@7b554208
+2024-04-22T11:34:01.707+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 17: dispatching class org.gradle.launcher.daemon.protocol.CloseInput
+2024-04-22T11:34:01.707+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result Success[value=org.gradle.launcher.exec.BuildActionResult@74bada02] from daemon DaemonInfo{pid=4773, address=[4e2e6f1f-fa38-4ebc-9e69-b93b7ca5cc76 port:42833, addresses:[/127.0.0.1]], state=Idle, lastBusy=1713782014822, context=DefaultDaemonContext[uid=6da4ddcb-59ac-4384-a982-5b7f044b7036,javaHome=/usr/lib/jvm/java-17-openjdk-amd64,daemonRegistryDir=/home/simon/.gradle/daemon,pid=4773,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} (build should be done).
+2024-04-22T11:34:01.707+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Finished
+2024-04-22T11:34:01.707+0100 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: connection stop
+2024-04-22T11:34:01.708+0100 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   For more details, please refer to https://docs.gradle.org/8.7/userguide/logging.html#sec:debug_security in the Gradle documentation.
+#############################################################################
+
